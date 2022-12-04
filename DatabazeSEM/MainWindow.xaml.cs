@@ -27,7 +27,7 @@ namespace DatabazeSEM
         {
             InitializeComponent();
             program = ProgramSingleton.Instance;
-            List<string> races = program.getAllRaces();
+            List<string> races = program.GetAllRaces();
             foreach (var race in races)
             {
                 cbRaces.Items.Add(race);
@@ -40,7 +40,7 @@ namespace DatabazeSEM
             string name = txtName.Text;
             //TODO create new race in database. 
             //Open racewindow with that race.
-            RaceWindow raceWindow = new RaceWindow();
+            RaceWindow raceWindow = new RaceWindow(name);
             raceWindow.Show();
         }
 
@@ -54,7 +54,7 @@ namespace DatabazeSEM
         private void btnEdit_Click(object sender, RoutedEventArgs e)
         {
             //open selected race in RaceWindow
-            RaceWindow raceWindow = new RaceWindow();
+            RaceWindow raceWindow = new RaceWindow(cbRaces.Text);
             raceWindow.Show();
         }
 

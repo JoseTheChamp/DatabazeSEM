@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -19,9 +20,20 @@ namespace DatabazeSEM
     /// </summary>
     public partial class RaceWindow : Window
     {
-        public RaceWindow()
+        public string RaceName { get; set; }
+        public RaceWindow(string raceName)
         {
+            RaceName = raceName;
             InitializeComponent();
+            Debug.WriteLine("NASTAVENI NAZVU  " + raceName);
+            Debug.WriteLine("puvodni NAZev  " + txtRaceName.Text);
+            txtRaceName.Text = raceName;
+            Debug.WriteLine("novy NAZev  " + txtRaceName.Text);
+        }
+
+        private void txtRaceName_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            //Change name of race to xxx
         }
     }
 }

@@ -5,11 +5,13 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:DatabazeSEM.Views"
         mc:Ignorable="d"
-        Title="AddRacer" Height="363" Width="330"
+        Title="AddRacer" Height="278" Width="330"
         ResizeMode="NoResize">
     <Grid>
         <ComboBox HorizontalAlignment="Center" FontSize="18" Margin="0,10,0,0" VerticalAlignment="Top" Width="310" Height="54"/>
-        <Button Content="Cancel" FontSize="24" HorizontalAlignment="Left" Margin="189,281,0,0" VerticalAlignment="Top" Height="56" Width="141"/>
+        <Button Content="Cancel" FontSize="24" HorizontalAlignment="Left" Margin="179,174,0,0" VerticalAlignment="Top" Height="56" Width="141"/>
+        <Button Content="Add" FontSize="24" HorizontalAlignment="Left" Margin="14,174,0,0" VerticalAlignment="Top" Height="56" Width="141"/>
+        <Button Content="New Racer" FontSize="24" HorizontalAlignment="Center" Margin="0,89,0,0" VerticalAlignment="Top" Height="56" Width="142"/>
 
     </Grid>
 </Window>
