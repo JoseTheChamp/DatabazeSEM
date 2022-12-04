@@ -6,7 +6,5 @@ using System.Threading.Tasks;
 
 namespace DatabazeSEM.Models.Entities
 {
-    internal class Track
-    {
-    }
+    
 }

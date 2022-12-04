@@ -13,7 +13,7 @@
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
-            <ColumnDefinition/>
+            <ColumnDefinition Width="0.5*"/>
             <ColumnDefinition/>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
@@ -27,32 +27,31 @@
         <Border BorderBrush="Black" BorderThickness="1" Grid.Column="1" Grid.Row="1"/>
         <Border BorderBrush="Black" BorderThickness="1" Grid.Row="1"/>
         -->
-        <TextBox x:Name="txtRaceName" VerticalContentAlignment="Center" TextAlignment="Center" FontSize="20" HorizontalAlignment="Center"  TextWrapping="Wrap" Text="Race Name" VerticalAlignment="Top" Height="43" Width="144" Margin="0,10,0,0"/>
-        <Label Grid.Column="1" FontSize="18" Content="Starts
-" HorizontalAlignment="Left" Margin="10,6,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtRaceName" VerticalContentAlignment="Center" TextAlignment="Center" FontSize="20" HorizontalAlignment="Center"  TextWrapping="Wrap" Text="Race Name" VerticalAlignment="Top" Height="43" Width="144" Margin="0,10,0,0" TextChanged="txtRaceName_TextChanged"/>
+        <Label Grid.Column="1" FontSize="18" Content="Starts" HorizontalAlignment="Left" Margin="10,6,0,0" VerticalAlignment="Top"/>
         <Label Grid.Column="2" FontSize="18" Content="Timers " HorizontalAlignment="Left" Margin="10,5,0,0" VerticalAlignment="Top"/>
-        <Button x:Name="btnNewStart" Grid.Column="1" FontSize="18" Content="New Start" HorizontalAlignment="Left" Margin="100,37,0,0" VerticalAlignment="Top"/>
-        <Label Grid.Column="2" FontSize="14" Content="Timer 1: " HorizontalAlignment="Left"  VerticalAlignment="Top" Height="31" Width="65" Margin="10,42,0,0"/>
-        <Label Grid.Column="2" FontSize="14" Content="Timer 2: " HorizontalAlignment="Left"  VerticalAlignment="Top" Height="31" Width="65" Margin="10,67,0,0"/>
-        <Label Grid.Column="2" FontSize="14" Content="Timer 3: " HorizontalAlignment="Left"  VerticalAlignment="Top" Height="31" Width="65" Margin="10,92,0,0"/>
-        <Button x:Name="btnT1NewTime" Grid.Column="2" Content="+" HorizontalAlignment="Left" Margin="100,43,0,0" VerticalAlignment="Top" Width="20" />
-        <Button x:Name="btnT1StartTimer" Grid.Column="2" Content="S" HorizontalAlignment="Left" Margin="126,43,0,0" VerticalAlignment="Top" Width="20" />
-        <Button x:Name="btnT1ResetTimer" Grid.Column="2" Content="R" HorizontalAlignment="Left" Margin="152,43,0,0" VerticalAlignment="Top" Width="20" />
-        <Button x:Name="btnT2NewTime" Grid.Column="2" Content="+" HorizontalAlignment="Left" Margin="100,70,0,0" VerticalAlignment="Top" Width="20" />
-        <Button x:Name="btnT2StartTimer" Grid.Column="2" Content="S" HorizontalAlignment="Left" Margin="126,70,0,0" VerticalAlignment="Top" Width="20" />
-        <Button x:Name="btnT2ResetTimer" Grid.Column="2" Content="R" HorizontalAlignment="Left" Margin="152,70,0,0" VerticalAlignment="Top" Width="20" />
-        <Button x:Name="btnT3NewTime" Grid.Column="2" Content="+" HorizontalAlignment="Left" Margin="100,97,0,0" VerticalAlignment="Top" Width="20" />
-        <Button x:Name="btnT3StartTimer" Grid.Column="2" Content="S" HorizontalAlignment="Left" Margin="126,97,0,0" VerticalAlignment="Top" Width="20" />
-        <Button x:Name="btnT3ResetTimer" Grid.Column="2" Content="R" HorizontalAlignment="Left" Margin="152,97,0,0" VerticalAlignment="Top" Width="20" />
-        <Label Grid.Column="2" FontSize="14" Content="id:" HorizontalAlignment="Left"  VerticalAlignment="Top" Height="31" Width="40" Margin="96,10,0,0"/>
-        <TextBox x:Name="txtIdNewTime" Grid.Column="2" VerticalContentAlignment="Center" TextAlignment="Center"  Margin="126,13,22,0" TextWrapping="Wrap" Text="id" VerticalAlignment="Top" Height="25"/>
+        <Button x:Name="btnNewStart" Grid.Column="1" FontSize="18" Content="New Start*" HorizontalAlignment="Left" Margin="12,62,0,0" VerticalAlignment="Top"/>
+        <Label Grid.Column="2" FontSize="14" Content="Timer 1: " HorizontalAlignment="Left"  VerticalAlignment="Top" Height="30" Width="65" Margin="15,37,0,0"/>
+        <Label Grid.Column="2" FontSize="14" Content="Timer 2: " HorizontalAlignment="Left"  VerticalAlignment="Top" Height="31" Width="65" Margin="15,64,0,0"/>
+        <Label Grid.Column="2" FontSize="14" Content="Timer 3: " HorizontalAlignment="Left"  VerticalAlignment="Top" Height="31" Width="65" Margin="15,92,0,0"/>
+        <Button x:Name="btnT1NewTime" Grid.Column="2" Content="+" HorizontalAlignment="Left" Margin="141,42,0,0" VerticalAlignment="Top" Width="20" />
+        <Button x:Name="btnT1StartTimer" Grid.Column="2" Content="S" HorizontalAlignment="Left" Margin="167,42,0,0" VerticalAlignment="Top" Width="20" />
+        <Button x:Name="btnT1ResetTimer" Grid.Column="2" Content="R" HorizontalAlignment="Left" Margin="193,42,0,0" VerticalAlignment="Top" Width="20" />
+        <Button x:Name="btnT2NewTime" Grid.Column="2" Content="+" HorizontalAlignment="Left" Margin="141,69,0,0" VerticalAlignment="Top" Width="20" />
+        <Button x:Name="btnT2StartTimer" Grid.Column="2" Content="S" HorizontalAlignment="Left" Margin="167,69,0,0" VerticalAlignment="Top" Width="20" />
+        <Button x:Name="btnT2ResetTimer" Grid.Column="2" Content="R" HorizontalAlignment="Left" Margin="193,69,0,0" VerticalAlignment="Top" Width="20" />
+        <Button x:Name="btnT3NewTime" Grid.Column="2" Content="+" HorizontalAlignment="Left" Margin="141,96,0,0" VerticalAlignment="Top" Width="20" />
+        <Button x:Name="btnT3StartTimer" Grid.Column="2" Content="S" HorizontalAlignment="Left" Margin="167,96,0,0" VerticalAlignment="Top" Width="20" />
+        <Button x:Name="btnT3ResetTimer" Grid.Column="2" Content="R" HorizontalAlignment="Left" Margin="193,96,0,0" VerticalAlignment="Top" Width="20" />
+        <Label Grid.Column="2" FontSize="14" Content="id:" HorizontalAlignment="Left"  VerticalAlignment="Top" Height="31" Width="40" Margin="106,5,0,0"/>
+        <TextBox x:Name="txtIdNewTime" Grid.Column="2" VerticalContentAlignment="Center" TextAlignment="Center"  Margin="136,8,31,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="25"/>
         <Label Grid.Column="3" FontSize="18" Content="Tracks" HorizontalAlignment="Left" Margin="15,6,0,0" VerticalAlignment="Top"/>
         <Button x:Name="btnEditTrack" Grid.Column="3" Content="E" HorizontalAlignment="Left" Margin="93,13,0,0" VerticalAlignment="Top" Width="20" />
         <Button x:Name="btnNewTrack" Grid.Column="3" Content="+" HorizontalAlignment="Left" Margin="119,13,0,0" VerticalAlignment="Top" Width="20" />
         <Button x:Name="btnDeleteTrack" Grid.Column="3" Content="-" HorizontalAlignment="Left" Margin="145,13,0,0" VerticalAlignment="Top" Width="20" />
-        <TextBox x:Name="txtRaceInfo"  HorizontalAlignment="Left" FontSize="12" Margin="49,10,0,0" Grid.Row="1" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="141" Height="55"/>
+        <TextBox x:Name="txtRaceInfo"  HorizontalAlignment="Left" FontSize="12" Margin="49,10,0,0" Grid.Row="1" TextWrapping="Wrap"  VerticalAlignment="Top" Width="141" Height="55"/>
         <Label FontSize="14" Content="Info:" HorizontalAlignment="Left"  VerticalAlignment="Top" Height="31" Width="65" Margin="5,7,0,0" Grid.Row="1"/>
-        <TextBox x:Name="txtRaceDate" VerticalContentAlignment="Center" HorizontalAlignment="Left" FontSize="12" Margin="75,73,0,0" Grid.Row="1" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="115" Height="28"/>
+        <TextBox x:Name="txtRaceDate" VerticalContentAlignment="Center" HorizontalAlignment="Left" FontSize="12" Margin="75,73,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="115" Height="28"/>
         <Label FontSize="14" Content="Date:" HorizontalAlignment="Left"  VerticalAlignment="Top" Height="31" Width="65" Margin="5,73,0,0" Grid.Row="1"/>
         <Label FontSize="14" Content="Type of Race:" HorizontalAlignment="Left"  VerticalAlignment="Top" Height="31" Width="95" Margin="5,109,0,0" Grid.Row="1"/>
         <ComboBox x:Name="cbTypeOfRace" HorizontalAlignment="Left" Margin="100,111,0,0" Grid.Row="1" VerticalAlignment="Top" Width="90" Height="27"/>
@@ -61,9 +60,17 @@
         <Button x:Name="btnAddRacer" Grid.Column="3" Content="+" HorizontalAlignment="Left" Margin="119,14,0,0" VerticalAlignment="Top" Width="20" Grid.Row="1" />
         <Button x:Name="btnRemoveRacer" Grid.Column="3" Content="-" HorizontalAlignment="Left" Margin="145,14,0,0" VerticalAlignment="Top" Width="20" Grid.Row="1" />
         <Label Grid.Column="3" Content="Filter name:" HorizontalAlignment="Left" Margin="4,39,0,0" Grid.Row="1" VerticalAlignment="Top"/>
-        <TextBox x:Name="txtFilterRacers" Grid.Column="3" HorizontalAlignment="Left" Margin="80,44,0,0" Grid.Row="1" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="110"/>
-        <Label Grid.Column="1" FontSize="14" Content="id:" HorizontalAlignment="Left"  VerticalAlignment="Top" Height="31" Width="40" Margin="10,37,0,0"/>
-        <TextBox x:Name="txtIdNewStart" Grid.Column="1" VerticalContentAlignment="Center" TextAlignment="Center"  Margin="40,40,108,0" TextWrapping="Wrap" Text="id" VerticalAlignment="Top" Height="25"/>
+        <TextBox x:Name="txtFilterRacers" Grid.Column="3" HorizontalAlignment="Left" Margin="80,44,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="110"/>
+        <ListBox x:Name="lbStarts" Grid.Column="1" Grid.Row="1" SelectionChanged="lbStarts_SelectionChanged"/>
+        <ComboBox x:Name="cbT1Tracks" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Top" Width="60" Margin="76,42,0,0" Height="20"/>
+        <ComboBox x:Name="cbT2Tracks" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Top" Width="60" Margin="76,69,0,0" Height="20"/>
+        <ComboBox x:Name="cbT3Tracks" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Top" Width="60" Margin="76,96,0,0" Height="20"/>
+        <ListBox x:Name="lbStartsFinished" Grid.Column="2" Grid.Row="1"/>
+        <ListBox x:Name="lbTracks" Grid.Column="3" Margin="4,38,4,4"/>
+        <Button x:Name="btnRefresh" Content="Refresh" FontSize="14" HorizontalAlignment="Left" Margin="5,92,0,0" VerticalAlignment="Top"/>
+        <TextBlock Grid.Column="1" FontSize="11" HorizontalAlignment="Left" Margin="10,92,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="41" Width="87" Grid.RowSpan="2"><Run Language="cs-cz" Text="*"/><Run Text="Choose track and racer."/></TextBlock>
+        <ListBox x:Name="lbRacers" Grid.Column="3" Grid.Row="1" Margin="10,70,10,10"/>
+
 
 
 
