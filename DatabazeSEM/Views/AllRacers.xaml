@@ -1,0 +1,20 @@
+﻿<Window x:Class="DatabazeSEM.AllRacers"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DatabazeSEM"
+        mc:Ignorable="d"
+        Title="AllRacers" Height="454" Width="700">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="6.5*"/>
+        </Grid.RowDefinitions>
+        <Label Content="All Racers" FontSize="20" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="btnNewRacer" Content="New Racer" FontSize="20" HorizontalAlignment="Left" Margin="143,0,0,0" VerticalAlignment="Center" Height="35" Width="110"/>
+        <Button x:Name="btnEdit" Content="Edit" FontSize="20" HorizontalAlignment="Left" Margin="258,0,0,0" VerticalAlignment="Center" Height="35" Width="99"/>
+        <Button x:Name="btnDelete" Content="Delete" FontSize="20" HorizontalAlignment="Left" Margin="362,0,0,0" VerticalAlignment="Center" Height="35" Width="99"/>
+
+    </Grid>
+</Window>
