@@ -53,7 +53,7 @@ namespace DatabazeSEM.Views {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/DatabazeSEM;component/views/addracer.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/DatabazeSEM;V1.0.0.0;component/views/addracer.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\Views\AddRacer.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

@@ -2,7 +2,7 @@
   "version": 3,
   "targets": {
     "net7.0-windows7.0": {
-      "Oracle.ManagedDataAccess/21.8.0": {
+      "Oracle.ManagedDataAccess/21.7.0": {
         "type": "package",
         "dependencies": {
           "System.Text.Json": "6.0.0"
@@ -79,10 +79,10 @@
     }
   },
   "libraries": {
-    "Oracle.ManagedDataAccess/21.8.0": {
-      "sha512": "QPGJFMl9im40ooJhoiglMspOfTTgK8EwOODe6KMbPY6sTaK+VZ+DyWBmYP3ZPkiITqBfcwPRx1iWazF+1balzA==",
+    "Oracle.ManagedDataAccess/21.7.0": {
+      "sha512": "PmIxpwdSzZrMmuJqAzR0NJYH7w+8PLSgFFuceQG0bE9pkDBLXHRjUwrWbzPDBxLWSIbPuAXrGwAX0b38vN7QYQ==",
       "type": "package",
-      "path": "oracle.manageddataaccess/21.8.0",
+      "path": "oracle.manageddataaccess/21.7.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -101,7 +101,7 @@
         "content/net462/Web.config.uninstall.xdt",
         "info.txt",
         "lib/net462/Oracle.ManagedDataAccess.dll",
-        "oracle.manageddataaccess.21.8.0.nupkg.sha512",
+        "oracle.manageddataaccess.21.7.0.nupkg.sha512",
         "oracle.manageddataaccess.nuspec",
         "readme.txt"
       ]
@@ -215,7 +215,7 @@
   },
   "projectFileDependencyGroups": {
     "net7.0-windows7.0": [
-      "Oracle.ManagedDataAccess >= 21.8.0"
+      "Oracle.ManagedDataAccess >= 21.7.0"
     ]
   },
   "packageFolders": {
@@ -259,7 +259,7 @@
         "dependencies": {
           "Oracle.ManagedDataAccess": {
             "target": "Package",
-            "version": "[21.8.0, )"
+            "version": "[21.7.0, )"
           }
         },
         "imports": [
@@ -290,7 +290,7 @@
       "code": "NU1701",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Package 'Oracle.ManagedDataAccess 21.8.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net7.0-windows7.0'. This package may not be fully compatible with your project.",
+      "message": "Package 'Oracle.ManagedDataAccess 21.7.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net7.0-windows7.0'. This package may not be fully compatible with your project.",
       "libraryId": "Oracle.ManagedDataAccess",
       "targetGraphs": [
         "net7.0-windows7.0"
